@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+body{
+	font-family: 'Ubuntu',sans-serif;
+	font-style: normal;
+	font-size: 1.125rem;
+	background: linear-gradient(to right, #3e5151, #decba4);
+	color: #14213d;
+	.container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		row-gap: 20px;
+		margin-bottom: 1.25rem;
+		&__item{
+			border-radius: 20px;
+			background-color: #004d7a3d;
+			width: 40%;
+			position: relative;
+			border: 2px solid #14213d;
+		}
+	}
+}
+.delete-icon{
+	color: #decba4;
+	position: absolute;
+	top: -10%;
+	right: -1%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #3e5151;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	transition: color 0.3s ease,
+	background-color 0.3s ease;
+	&:hover{
+		color: #14213d;
+		background-color: #decba4;
+	}
+}
+.title{
+	position: absolute;
+	background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+	text-transform: uppercase;
+	font-weight: 700;
+	top: -30%;
+	left: -5%;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-left: 3px solid #14213d;
+	padding: 10px;
+	font-size: 1.5rem;
+}
+.comment__text{
+	font-size: 1.25rem;
+	font-weight: 400;
+	padding: 30px 10px 10px 10px;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 3.125rem;
+	&__textarea{
+		width: 40%;
+		height: 9.375rem;
+		font-family: 'Ubuntu',sans-serif;
+		background-color: #004d7a19;
+		border: 2px solid #14213d;
+		border-radius: .625rem;
+		font-size: 1.125rem;
+		font-weight: 300;
+		&:focus{
+			outline: 2px solid #decba4;
+			border: 2px solid transparent;
+		}
+	}
+	&__button{
+		position: absolute;
+		bottom: -10%;
+		right: 29%;
+		font-family: 'Ubuntu',sans-serif;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: 700;
+		color: #decba4;
+		cursor: pointer;
+		padding: .3125rem;
+		border-radius: 5px;
+		border: 2px solid #14213d;
+		background-color: #3e5151;
+		transition: color 0.3s ease,
+		background-color 0.3s ease;
+		&:hover{
+			background-color:#decba4;
+			color: #14213d;
+		}
+	}
+}
